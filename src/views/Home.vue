@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-xl text-center">Home</h1>
+    <h1 class="text-5xl text-center mb-4">Home</h1>
     <PokemonsListComponent :pokemons="pokemons" />
   </div>
 </template>
