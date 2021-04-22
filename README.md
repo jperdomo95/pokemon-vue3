@@ -24,6 +24,7 @@ yarn test:unit
 ```
 yarn lint
 ```
+### API resources
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Pokemons list: https://pokeapi.co/api/v2/pokemon/
+Pokemon image: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png
