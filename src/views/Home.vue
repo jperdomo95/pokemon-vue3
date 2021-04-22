@@ -8,6 +8,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import PokemonsListComponent from '@/components/pokemons/PokemonsList.component.vue'
+import { PokemonInterface } from '@/models/pokemons/Pokemon.interface'
 
 export default defineComponent({
   name: 'Home',
@@ -15,7 +16,7 @@ export default defineComponent({
     PokemonsListComponent
   },
   setup () {
-    const pokemons: any[] = [
+    const pokemons: PokemonInterface[] = [
       {
         id: 1,
         name: 'Bulbasaur',
