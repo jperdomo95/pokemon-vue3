@@ -6,9 +6,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import PokemonsListComponent from '@/components/pokemons/PokemonsList.component.vue'
-import { PokemonInterface } from '@/models/pokemons/Pokemon.interface'
+import { defineComponent, reactive } from 'vue'
+import PokemonsListComponent from '@/components/pokemons/PokemonsListComponent.vue'
+import { PokemonInterface } from '@/models/pokemons/PokemonInterface'
 
 export default defineComponent({
   name: 'Home',
@@ -16,7 +16,7 @@ export default defineComponent({
     PokemonsListComponent
   },
   setup () {
-    const pokemons: PokemonInterface[] = [
+    const pokemons: PokemonInterface[] = reactive([
       {
         id: 1,
         name: 'Bulbasaur',
@@ -32,7 +32,8 @@ export default defineComponent({
         name: 'venusaur',
         image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png'
       }
-    ]
+    ])
+
     return {
       pokemons
     }
